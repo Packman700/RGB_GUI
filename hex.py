@@ -12,3 +12,10 @@ def print_hex(dec):
 
 def combine_hex(R,G,B):
     return '#{}{}{}'.format(print_hex(R),print_hex(G),print_hex(B))
+
+def hex_validation(input):
+    try:
+        if input[0] == '#' and 0 <= int(input[1:3],16) <= 255  and 0 <= int(input[3:5],16) <= 255  and 0 <= int(input[5:7],16) <= 255:
+            return True
+    except:
+        return False
