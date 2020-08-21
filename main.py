@@ -39,7 +39,7 @@ def update(a, b, c):
 
 ############## Menu Button ###############
 Palette_Menu = Menubutton(text='Pallets',relief=RAISED)
-Palette_Menu.place(relx=0.85, rely=0.85)
+Palette_Menu.place(relx=0.85, rely=0.81)
 
 Palette_Menu.menu = Menu(Palette_Menu, tearoff=0)
 Palette_Menu['menu'] = Palette_Menu.menu
