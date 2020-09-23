@@ -45,6 +45,7 @@ Palette_Menu.menu = Menu(Palette_Menu, tearoff=0)
 Palette_Menu['menu'] = Palette_Menu.menu
 
 Palette_mode = StringVar()
+Palette_mode.trace('w', update)
 Palette_mode.set('Triad')
 
 Palette_Menu.menu.add_radiobutton(label='Triad',variable=Palette_mode,value='Triad')
